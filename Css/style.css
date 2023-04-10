@@ -18,7 +18,6 @@ header {
 
 .header-left {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     height: 16px;
     width: 250px;
@@ -26,19 +25,29 @@ header {
     font-size: 13px;
 }
 
+.header-left a {
+    color: black;
+    text-decoration: none;
+}
+
+.header-left:hover a {
+    font-style: normal;
+}
+
 .header-right {
     display: flex;
     margin-left: -103px;
 }
-.button{
+
+.button {
     cursor: pointer;
 }
+
 .search-bar {
     position: relative;
     width: 200px;
     border-radius: 5px;
     border-color: white;
-    
 }
 
 .search {
@@ -64,7 +73,7 @@ header {
     display: flex;
     height: 390px;
     width: 1440px;
-    background-image: url(./Image/Image\ 1.png);
+    background-image: url(/Image/Image\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -135,7 +144,7 @@ header {
 }
 
 .ft-btn.ft-btn-active {
-    background-color:#459d7a;
+    background-color: #459d7a;
     color: white;
 }
 
@@ -164,7 +173,7 @@ header {
     padding-left: 26px;
     border-radius: 5px;
     border: none;
-    border-bottom: 0.5px solid rgb(226, 220, 220);
+    border-bottom: 0.5px solid rgb(220, 220, 220);
 }
 
 .search-icon-sort {
@@ -173,9 +182,11 @@ header {
     top: 13px;
     left: 18px;
 }
-.sort-search ::placeholder{
-    color:  #b3b3b3;
+
+.sort-search ::placeholder {
+    color: #b3b3b3;
 }
+
 .sort-by-btn {
     background: rgb(236, 234, 234);
     color: #696c6a;
@@ -208,9 +219,10 @@ header {
     display: flex;
     width: 1190px;
     gap: 38px;
-    padding-left: 130px;
+    margin-left: 130px;
     padding-top: 45px;
     flex-direction: column;
+    gap: 100px;
 }
 
 .sales-product-one {
@@ -218,6 +230,11 @@ header {
     width: 272px;
     height: 468px;
     position: relative;
+}
+
+.sales-product a {
+    text-decoration: none;
+    color: black;
 }
 
 .sales-product-one-pic {
@@ -238,32 +255,38 @@ header {
     align-items: center;
     justify-content: center;
 }
-.sales-product-one-title{
+
+.sales-product-one-title {
     line-height: 30px;
     padding-top: 25px;
 }
-.sales-product-one-buy{
+
+.sales-product-one-buy {
     display: flex;
     align-items: center;
     padding-top: 15px;
     gap: 10px;
     position: relative;
 }
-.sales-product-one-buy-pic{
+
+.sales-product-one-buy-pic {
     position: absolute;
     right: 0px;
     cursor: pointer;
 }
-.sales-product-one-buy-price{
+
+.sales-product-one-buy-price {
     color: #d0d3d7;
     font-size: medium;
 }
-.sales-product-line{
+
+.sales-product-line {
     display: flex;
     width: 1190px;
     gap: 38px;
 }
-.sales-product-one-pic-new{
+
+.sales-product-one-pic-new {
     top: 10px;
     right: 12px;
     display: flex;
@@ -277,57 +300,56 @@ header {
     align-items: center;
     justify-content: center;
 }
-.page-number{
+
+.page-number {
     display: flex;
-    margin-left: 600px;
     width: 1485px;
-    margin-top: 15px;
     gap: 35px;
     text-align: center;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
 }
-.list-button-number{
+
+.list-button-number {
     display: flex;
     gap: 12px;
     padding-top: 3px;
 }
-.button-number{
-    cursor: pointer;
-    padding-top: 7px;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
 
-}
-.button-number-now{
+.button-number {
     cursor: pointer;
-    padding-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 30px;
     height: 30px;
-    border-radius: 5px;
-    background-color: #f4faf8;
-    color: #459d7a;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
 }
-.control-page-pre{
-    cursor: pointer;
+
+.button-number.active {
+    color: turquoise;
 }
-.control-page-next{
-    cursor: pointer;
-    
-}
-.infomation{
+
+.infomation {
     display: flex;
     width: 1440px;
     height: 440px;
     background-color: #1d2128;
     margin-top: 100px;
 }
-.infomation-left{
+
+.infomation-left {
     display: flex;
     width: 1000px;
     height: 300px;
     gap: 50px;
 }
-.infomation-left-about{
+
+.infomation-left-about {
     position: relative;
     padding-top: 100px;
     margin-left: 130px;
@@ -335,20 +357,23 @@ header {
     line-height: 38px;
     font-size: medium;
 }
-.infomation-left-help{
+
+.infomation-left-help {
     font-size: medium;
     padding-top: 100px;
     color: white;
     line-height: 38px;
     width: 150px;
 }
-.infomation-left-contract{
+
+.infomation-left-contract {
     font-size: medium;
     padding-top: 100px;
     color: white;
     line-height: 38px;
 }
-.button-language{
+
+.button-language {
     cursor: pointer;
     display: flex;
     width: 130px;
@@ -357,31 +382,36 @@ header {
     border: 1px solid white;
     margin-top: 15px;
     padding-left: 10px;
+    background-color: #1d2128;
+    color: white;
 }
-.icon-down{
+
+.icon-down {
     position: absolute;
-    top: 316px;
+    top: 337px;
     left: 100px;
 }
 
-.infomation-right-content{
+.infomation-right-content {
     color: white;
     font-size: medium;
     line-height: 35px;
     padding-top: 100px;
     padding-left: 240px;
 }
-.infomation-right-button{
+
+.infomation-right-button {
     display: flex;
     position: relative;
     width: 1000px;
     height: 70px;
 }
-.input-bar{
+
+.input-bar {
     background-color: #1d2128;
     width: 300px;
     height: 53px;
-    border: 1px solid white;
+    border: 0.5px solid white;
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
     margin-left: 240px;
@@ -390,16 +420,20 @@ header {
     font-size: 17px;
     padding-left: 50px;
     color: white;
+    border-right: none;
 }
-.message-icon{
+
+.message-icon {
     position: absolute;
     top: 20px;
     left: 255px;
 }
-.input-bar::placeholder{
+
+.input-bar::placeholder {
     color: #b3b3b3;
 }
-.button-subsribe{
+
+.button-subsribe {
     cursor: pointer;
     justify-content: center;
     align-items: center;
@@ -408,12 +442,19 @@ header {
     width: 125px;
     height: 53px;
     color: white;
-    background-color:#459d7a;
+    background-color: #459d7a;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     font-size: larger;
+    border: none;
 }
-.subscribe{
+
+.infomation-right-button:hover a {
+    text-decoration: none;
+    color: white;
+}
+
+.subscribe {
     display: flex;
     width: 600px;
     height: 30px;
@@ -421,15 +462,16 @@ header {
     margin-top: 20px;
     gap: 10px;
 }
-.infomation-right-content-last{
+
+.infomation-right-content-last {
     display: flex;
     color: white;
     padding-left: 240px;
     padding-top: 20px;
     font-size: 15px;
-    
 }
-.infomation-right-content-last-menu{
+
+.infomation-right-content-last-menu {
     padding-left: 30px;
     display: flex;
     gap: 30px;
